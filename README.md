@@ -2,7 +2,7 @@
 
 This project demonstrates TOTP (Time-based One-Time Password) 2FA in Python using pyotp and bcrypt. It simulates the login process where a user:
 
-1.User enters their username & password
+1. User enters their username & password
 
 If the credentials are wrong, access is denied.
 
