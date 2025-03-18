@@ -35,3 +35,6 @@ Industry standard – Used in OAuth, OpenID, and enterprise security.
 
 ## How does 2FA work?
 Google Authenticator is a TOTP-based 2FA app that generates 6-digit codes every 30 seconds using a shared secret key and the current time. When logging in, users enter this code along with their credentials. The server, knowing the same key, verifies the code using TOTP (HMAC-SHA1). This method is secure, phishing-resistant, and works offline. Python’s pyotp library follows the same standard, making it easy to integrate into applications.
+
+## Future development
+This 2FA code is for testing, but in real applications, this would be a security risk to show codes in UI. Instead, codes should be used via authentication apps like Google Authenticator. To make it industry-ready, we could secure secrets in a backend, enforce HTTPS, use authentication APIs (e.g., Firebase/Auth0), and support hardware security keys for stronger protection.
